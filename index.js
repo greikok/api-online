@@ -9,7 +9,7 @@ app.use((req, res, next) => {
   next();
 });
 
-app.get('/ping', (req, res) => {
+app.get('/check', (req, res) => {
   const url = req.originalUrl;
 
   const domain = url.split('=')[1]; // obtiene el segundo elemento del array generado por split()
